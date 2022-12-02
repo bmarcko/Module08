@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity01</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="">
+    <h2>Employee Registration Form</h2>
+    <h2>Check the box to register</h2>
+    
+    <input type="checkbox" ng-model="myVar2" ng-init="myVar2-false"  ng-disabled="myVar">
+    <div ng-if="myVar2">
+        <form action="" name="myForm" onsubmit="return(validate());">
+            
+                <div class="row">
+                    <label>Employee ID</label>
+                    <input type="text" name="employeeId"><br>
+                    <div class="error" id="idErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee First Name</label>
+                    <input type="text" name="firstName"><br>
+                    <div class="error" id="firstErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Last Name</label>
+                    <input type="text" name="lastName"><br>
+                    <div class="error" id="lastErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Address</label>
+                    <input type="text" name="address"><br>
+                    <div class="error" id="addressErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Department</label>
+                    <input type="text" name="department"><br>
+                    <div class="error" id="departmentErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Position</label>
+                    <input type="text" name="position"><br>
+                    <div class="error" id="positionErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Email</label>
+                    <input type="text" name="email"><br>
+                    <div class="error" id="emailErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Contact No.</label>
+                    <input type="text" name="contact"><br>
+                    <div class="error" id="contactErr"></div>
+                </div>
+
+                <div class="row">
+                    <label>Employee Username</label>
+                    <input type="text" name="username"><br>
+                    <div class="error" id="usernameErr"></div>
+                </div>
+                
+                <input type="submit" value="Submit" ng-click="toShow2=true">
+                <script type="text/javascript" src="validation.js"></script>
+            
+        </form>
+    </div>
+    </body>
+</body>
+</html>
