@@ -5,10 +5,12 @@ body {
 }
 h2 {
     text-align: center;
-    text-decoration: underline;
+}
+h3 {
+    text-align: center;
 }
 form {
-    width: 300px;
+    width: 500px;
     background: #fff;
     padding: 15px 40px 40px;
     border: 1px solid #ccc;
@@ -32,14 +34,14 @@ label i {
     padding-bottom: 10px;
 }
 
-input, select {
+/* input, select {
     border: 1px solid #ccc;
     padding: 10px;
     display: block;
     width: 100%;
     box-sizing: border-box;
     border-radius: 2px;
-}
+} */
 
 input[type="submit"] {
     font-size: 110%;

@@ -32,18 +32,24 @@ function validate(){
     if(document.myForm.email.value == ""){
         document.getElementById("emailErr").innerHTML = "Please enter email";
         return false;
-    } /* else {
-        var regex = /^\$+@\$+\.\$+$/;
+    } else {
+        var regex = /^\S+@\S+\.\S+$/;
         if(regex.test(document.myForm.email.value)==false){
         alert("Please enter a valid email address");
         return false;
         }
-    } */
+    }
 
     if(document.myForm.contact.value == ""){
         document.getElementById("contactErr").innerHTML = "Please enter contact number";
         return false;
     }
+
+    if(document.myForm.salary.value == ""){
+        document.getElementById("salaryErr").innerHTML = "Please enter salary";
+        return false;
+    } 
+
 
     if(document.myForm.username.value == ""){
         document.getElementById("usernameErr").innerHTML = "Please enter username";
